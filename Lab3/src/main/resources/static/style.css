@@ -1,0 +1,179 @@
+.logo{
+    float: left;
+    height: 70px;
+}
+
+.title{
+    margin: auto;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subText{
+    padding-top: 7px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    font-size: 14px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid black;
+}
+
+.CreateNote{
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 20px 150px;
+    border-radius: 8px;
+    background-image: linear-gradient(#353535, black);
+}
+
+.BrowseNote{
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 20px 150px;
+    border-radius: 8px;
+    background-image: linear-gradient(#353535, black);
+}
+
+
+
+.headerText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.inputTable{
+    padding-left: 3%;
+}
+
+.inputTable th{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding-right: 100px;
+}
+
+.titleBox{
+    width: 800px;
+}
+
+.noteBox{
+    resize: none;
+    width: 800px;
+    height: 400px;
+}
+
+.noteText{
+    padding-bottom: 360px;
+}
+
+.backButton{
+    margin: 0;
+    position: absolute;
+    top: 21%;
+    left: 61%;
+    transform: translate(-2%, -50%);
+
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 15px;
+    background-image: linear-gradient(#353535, black);
+}
+
+.createNoteButton{
+    margin: 0;
+    position: absolute;
+    bottom: 6%;
+    left: 61%;
+    transform: translate(-45%, -50%);
+
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 17px;
+    background-image: linear-gradient(#353535, black);
+}
+
+
+
+.container{
+   margin-left: 4%;
+    margin-right: 14%;
+}
+
+.browseTable{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.browseTable thead tr th{
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid black;
+    font-size: 14px;
+    text-align: left;
+}
+
+.backButton2 {
+    margin: 0;
+    position: absolute;
+    top: 16%;
+    left: 94%;
+    transform: translate(-2%, -50%);
+
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 23px;
+    background-image: linear-gradient(#353535, black);
+}
+
+.created_edited{
+    width: 120px;
+}
+
+.notetitle{
+    width: 700px;
+}
+
+.versions{
+    width: 55px;
+}
+
+
+
+.viewTable{
+    text-align: left;
+    padding-left: 50px;
+}
+
+.viewTable th{
+    padding-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.browseNoteText{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 370px;
+    font-size: 15px;
+    font-weight: bold;
+}
+

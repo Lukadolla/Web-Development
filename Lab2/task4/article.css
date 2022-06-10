@@ -1,0 +1,107 @@
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.logo{
+    text-align: center;
+    float: none;
+}
+
+.lead{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.date{
+    float: left;
+    padding-top: 63px;
+}
+
+.tagline{
+    text-align: center;
+    font-style: italic;
+    border-top: 1.7px solid black;
+    padding: 6px;
+}
+
+.menu{
+  height: 40px;
+  background-color: whitesmoke;
+  display: table;
+  width: 100%;
+  border-top: 1.7px solid;
+  border-top-color: black;
+  border-bottom: 1.7px solid;
+  border-bottom-color: red;
+}
+
+.menu li{
+    display: table-cell;
+    list-style-type: none;
+    float: left;
+    width: 20%;
+    height: 30px;
+    line-height: 40px;
+}
+
+.menu a{
+  text-decoration: none; 
+  display: block;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a:hover{
+    color: whitesmoke;
+    background-color: black;
+}
+
+.menu ul{
+  display: table-row;
+  width: 100%; 
+}
+
+ul{
+    padding: 0px;
+}
+
+.title{
+  font-family: Georgia;
+  font-size: 32px;
+  padding-top: 4px;
+}
+
+.reporter{
+  font-style: italic;
+  padding-top: 13px;
+}
+
+.featured-image img{
+    max-width: 800px;
+}
+
+.article-body{
+    max-width: 580px;
+    padding-right: 20px;
+    float: left;
+    font-size: 18px;
+}
+
+.sidebar p{
+  font-style: italic;
+}
+
+.gallery img{
+    max-width: 100%;
+}
+
+.gallery td{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}

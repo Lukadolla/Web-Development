@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<!--/*@thymesVar id="notes" type="java.util.Map<java.util.HashMap>"*/-->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>browse</title>
+</head>
+<body>
+
+    <img class="logo" src="/images/logo.jpg">
+    <h3 class="title">NoteIt</h3>
+    <p class="subText"> For all your note taking needs</p>
+
+    <h1 class="headerText">My Notes</h1>
+
+    <form method="GET" action="/">
+        <button type="submit" class="backButton2">Back</button>
+    </form>
+
+    <div class="container">
+
+    <table class="browseTable">
+        <thead>
+        <tr>
+            <th class="created_edited">Created</th>
+
+            <th class="created_edited">Last Edited</th>
+
+            <th class="notetitle">Note Title</th>
+
+            <th class="versions">Versions</th>
+
+            <th class="versions"></th>
+        </tr>
+
+        <tr th:each="key_val : ${notes}">
+            <td th:text="${#dates.format(key_val.value.dateCreated, 'dd-MMM yyyy')}">28-Jul 2018</td>
+            <td th:text="${#dates.format(key_val.value.dateEdited, 'dd-MMM yyyy')}">28-Jul 2018</td>
+            <td th:text="${key_val.value.title}">Title</td>
+            <td>1</td>
+            <td>
+                <a th:href="'/view/'+${key_val.value.id}">View</a>
+            </td>
+            <!--<a class="btn btn-view" th:attr="href=${'/view/'+key_val.value.id}">View 2</a>-->
+        </tr>
+        </thead>
+    </table>
+</div>
+
+</body>
+</html>

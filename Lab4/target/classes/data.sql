@@ -1,0 +1,1 @@
+INSERT INTO person(surname, firstname, id) VALUES('Bobertson', 'Bob', 1);

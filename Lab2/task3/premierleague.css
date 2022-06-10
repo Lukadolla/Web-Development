@@ -1,0 +1,47 @@
+table{
+    margin: auto;
+    width: 800px;
+}
+
+thead{
+    background-color:#EEEEEE;
+}
+
+h3{
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+td{
+    text-align: center;
+    font-family: "Georgia", serif;
+    padding: 3px;
+}
+
+.team{
+    text-align: left;
+}
+
+.win{
+    text-align: center;
+    background-color: green;
+    color: white;
+    font-size: small;
+    padding: 3px;
+}
+
+.draw{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-size: small;
+    padding: 3px;
+}
+
+.loss{
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: small;
+    padding: 3px;
+}

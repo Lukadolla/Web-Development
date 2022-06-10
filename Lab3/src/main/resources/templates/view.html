@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<!--/*@thymesVar id="note" type="app.Note"*/-->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>view</title>
+</head>
+<body>
+
+    <img class="logo" src="/images/logo.jpg">
+    <h3 class="title">NoteIt</h3>
+    <p class="subText"> For all your note taking needs</p>
+
+    <h1 class="headerText">View Note</h1>
+
+    <form method="GET" action="/browse">
+        <button type="submit" class="backButton">Back</button>
+    </form>
+
+    <form method="GET" action="/view/{id}">
+<table class="viewTable">
+    <tr>
+        <th>
+            <p>Title:</p>
+        </th>
+
+        <td>
+           <p class="textView" th:text="${note.title}"></p>
+        </td>
+    </tr>
+
+    <tr>
+        <th>
+            <p>Date Created:</p>
+        </th>
+
+        <td>
+           <p class="textView" th:text="${note.dateCreated}"></p>
+        </td>
+    </tr>
+
+    <tr>
+        <th>
+            <p class="browseNoteText">Note:</p>
+        </th>
+
+        <td>
+            <textarea readonly class="noteBox" th:text="${note.note}"></textarea>
+        </td>
+    </tr>
+
+</table>
+    </form>
+</body>
+</html>

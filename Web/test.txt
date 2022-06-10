@@ -1,0 +1,13 @@
+The modifications made were adding a delimiter variable to store the delimiter to be used. If the input has a / at the start
+it means a different delimiter will be used so it is parsed in from the numbers string. The delimiter is set to , by default.
+All the \n characters are replaced with the new delimiter. The Pattern.quote is included as to allow for all kinds of delimiters
+even reserved regex characters like (. An exception is thrown if the number is negative and ignored (converted to 0) if
+the number is over 1000.
+
+
+1. lineSplitTest added to see if \n is recognised as valid input.
+2. delimiterInputTestSemiColon added to test with ; delimiter.
+3. delimiterInputTestSlash added to test with / delimiter.
+4. delimiterInputTestBracket added to test with ( delimiter.
+5. negativeInputTest added to test if negative numbers throw an exception.
+6. numberOver1000Test added to test if numbers over 1000 are ignored.

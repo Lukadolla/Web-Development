@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<!--/*@thymesVar id="people" type="java.util.List<app.Person>"*/-->
+<head>
+    <title>People Page</title>
+    <script type="text/javascript" src="/code.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1 class="mainText">People</h1>
+
+<table>
+    <tbody>
+     <tr>
+         <td>
+             <table id="people">
+                 <thead class="tableHead">
+                 <tr>
+                     <th>Surname</th>
+                     <th>Firstname</th>
+                     <th></th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr th:each="person : ${people}" th:id="|row_${person.id}|">
+                     <td th:text="${person.surname}"></td>
+                     <td th:text="${person.firstname}"></td>
+                     <td>
+                         <button th:onclick="|viewPerson(${person.id})|">View</button>
+                         <button th:onclick="|removePerson(${person.id})|">Remove</button>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td><input type="text" id="surname"/></td>
+                     <td><input type="text" id="firstname"/></td>
+                     <td>
+                         <button onclick="addPerson()">Add</button>
+                     </td>
+                 </tr>
+
+                 </tbody>
+             </table>
+         </td>
+
+         <td id="table2">
+
+         </td>
+     </tr>
+
+    </tbody>
+
+</table>
+
+
+
+</body>
+</html>

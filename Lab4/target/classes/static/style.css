@@ -1,0 +1,7 @@
+.tableHead tr th{
+    border-bottom: 2px solid black;
+}
+
+.mainText{
+    font-size: 20px;
+}

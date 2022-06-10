@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>create</title>
+</head>
+<body>
+
+<img class="logo" src="/images/logo.jpg">
+<h3 class="title">NoteIt</h3>
+<p class="subText"> For all your note taking needs</p>
+<p class="headerText">Create a new Note</p>
+
+<form method="GET" action="/">
+    <button type="submit" class="backButton">Back</button>
+</form>
+
+<form method="POST" action="/create">
+<table class="inputTable">
+    <tr>
+        <th>
+            <p>Title:</p>
+        </th>
+
+        <td>
+            <input type="text" class="titleBox" name="title">
+        </td>
+    </tr>
+
+    <tr>
+        <th>
+            <p class="noteText">Note:</p>
+        </th>
+
+        <td>
+
+            <textarea class="noteBox" name="noteBox"></textarea>
+
+        </td>
+    </tr>
+</table>
+
+    <button type="submit" class="createNoteButton">Create Note</button>
+
+</form>
+</body>
+</html>

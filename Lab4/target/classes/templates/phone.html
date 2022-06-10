@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<!--/*@thymesVar id="phones" type="java.util.List<app.Person>"*/-->
+    <script type="text/javascript" src="/code.js"></script>
+    <link rel="stylesheet" href="/style.css">
+
+<h1>User Details for: </h1>
+<p th:text="${person.firstname}"></p>
+
+<table id="phones">
+    <thead class="tableHead">
+    <tr>
+        <th>Type</th>
+        <th>Number</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="phone : ${person.phone}" th:id="|row_${phone.id}|">
+        <td th:text="${phone.number}"></td>
+        <td th:text="${phone.type}"></td>
+        <td>
+            <button th:onclick="|removePerson(${phone.id})|">Remove</button>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="text" id="number"/></td>
+        <td><input type="text" id="type"/></td>
+        <td>
+            <button onclick="addPerson()">Add</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</html>
